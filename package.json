@@ -1,0 +1,27 @@
+{
+  "name": "linter-config",
+  "version": "1.0.0",
+  "description": "Linter configs for tslint and eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-thom/linter-config.git"
+  },
+  "keywords": [
+    "lint",
+    "linter",
+    "eslint",
+    "tslint",
+    "config",
+    "rules"
+  ],
+  "author": "Stuart Thomson <stu.thom.96@gmail.com> (https://sthom.kiwi/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-thom/linter-config/issues"
+  },
+  "homepage": "https://github.com/s-thom/linter-config#readme"
+}

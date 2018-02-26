@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "./partial/eslint-base.json"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 5
+  }
+}

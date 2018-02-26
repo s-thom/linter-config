@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "./partial/eslint-base.json",
+    "./partial/eslint-esnext.json",
+    "./partial/eslint-node.json"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}

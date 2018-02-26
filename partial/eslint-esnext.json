@@ -1,0 +1,95 @@
+{
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "getter-return": "error",
+    "no-await-in-loop": "warn",
+    "no-template-curly-in-string": "error",
+    "accessor-pairs": "warn",
+    "array-callback-return": "warn",
+    "class-methods-use-this": "warn",
+    "no-empty-pattern": "error",
+    "no-return-await": "off",
+    "prefer-promise-reject-errors": "warn",
+    "require-await": "warn",
+    "func-style": [
+      "warn",
+      "declaration",
+      {
+        "allow-arrow-functions": true
+      }
+    ],
+    "implicit-arrow-linebreak": [
+      "warn",
+      "beside"
+    ],
+    "template-tag-spacing": [
+      "warn",
+      "never"
+    ],
+    "arrow-body-style": [
+      "warn",
+      "as-needed"
+    ],
+    "arrow-parens": [
+      "warn",
+      "as-needed",
+      {
+        "requiredForBlockBody": true
+      }
+    ],
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "constructor-super": "error",
+    "generator-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": false
+      }
+    ],
+    "no-class-assign": "error",
+    "no-confusing-arrow": "warn",
+    "no-const-assign": "error",
+    "no-dupe-class-members": "error",
+    "no-duplicate-imports": "warn",
+    "no-new-symbol": "error",
+    "no-restricted-imports": "off",
+    "no-this-before-super": "error",
+    "no-useless-computed-key": "warn",
+    "no-useless-rename": "warn",
+    "no-var": "error",
+    "object-shorthand": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "error",
+    "prefer-destructuring": "warn",
+    "prefer-numeric-literals": "warn",
+    "prefer-rest-params": "error",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
+    "require-yeild": "error",
+    "rest-spread-spacing": [
+      "warn",
+      "never"
+    ],
+    "sort-imports": "off",
+    "symbold-description": "error",
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "yeild-star-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": false
+      }
+    ],
+  }
+}

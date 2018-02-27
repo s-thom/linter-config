@@ -1,5 +1,5 @@
 {
-  "name": "linter-config",
+  "name": "@sthom/linter-config",
   "version": "1.0.0",
   "description": "Linter configs for tslint and eslint",
   "main": "index.js",

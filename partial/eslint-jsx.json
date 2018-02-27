@@ -1,8 +1,85 @@
 {
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "jsx-quotes": [
       "warn",
       "prefer-double"
     ],
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-child-element-spacing": "warn",
+    "react/jsx-closing-bracket-location": "warn",
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "never",
+        "children": true
+      }
+    ],
+    "react/jsx-equals-spacing": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          "js",
+          "jsx"
+        ]
+      }
+    ],
+    "react/jsx-first-prop-new-line": [
+      "warn",
+      "multiline"
+    ],
+    "react/jsx-handler-names": "error",
+    "react/jsx-indent": [
+      "warn",
+      2
+    ],
+    "react/jsx-indent-props": [
+      "warn",
+      2
+    ],
+    "react/jsx-key": "error",
+    "react/jsx-max-props-per-line": [
+      "warn",
+      6
+    ],
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "react/jsx-no-comment-textnodes": "warn",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-literals": "off",
+    "react/jsx-no-target-blank": "warn",
+    "react/jsx-no-undef": "error",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/jsx-pascal-case": "warn",
+    "react/jsx-sort-default-props": "warn",
+    "react/jsx-sort-props": "off",
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "closing-slash": "never",
+        "before-self-closing": "always",
+        "after-opening": "never",
+        "before-closing": "never"
+      }
+    ],
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-wrap-multilnes": "warn"
   }
 }

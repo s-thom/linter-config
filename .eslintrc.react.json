@@ -6,7 +6,8 @@
   "extends": [
     "./partial/eslint-base.json",
     "./partial/eslint-esnext.json",
-    "./partial/eslint-jsx.json"
+    "./partial/eslint-jsx.json",
+    "./partial/eslint-react.json"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json.schemastore.org/eslintrc",
   "plugins": [
     "react",
     "jsx-a11y"
@@ -48,7 +47,10 @@
     "react/jsx-key": "error",
     "react/jsx-max-props-per-line": [
       "warn",
-      6
+      {
+        "maximum": 6,
+        "when": "always"
+      }
     ],
     "react/jsx-no-bind": [
       "error",
@@ -75,21 +77,21 @@
     "react/jsx-tag-spacing": [
       "warn",
       {
-        "closing-slash": "never",
-        "before-self-closing": "always",
-        "after-opening": "never",
-        "before-closing": "never"
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
       }
     ],
     "react/jsx-uses-vars": "warn",
-    "react/jsx-wrap-multilnes": "warn",
+    "react/jsx-wrap-multilines": "warn",
     "jsx-a11y/accessible-emoji": "warn",
     "jsx-a11y/alt-text": "error",
     "jsx-a11y/anchor-has-content": "error",
     "jsx-a11y/anchor-is-valid": "error",
-    "jsx-a11y/aria-activedecendant-has-tabindex": "warn",
+    "jsx-a11y/aria-activedescendant-has-tabindex": "warn",
     "jsx-a11y/aria-props": "error",
-    "jsx-a11y/aria-prototypes": "error",
+    "jsx-a11y/aria-proptypes": "error",
     "jsx-a11y/aria-role": "error",
     "jsx-a11y/aria-unsupported-elements": "error",
     "jsx-a11y/click-events-have-key-events": "warn",

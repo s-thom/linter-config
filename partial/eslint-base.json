@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json.schemastore.org/eslintrc",
   "rules": {
     "for-direction": "off",
     "no-compare-neg-zero": "error",
@@ -75,7 +74,7 @@
     "no-fallthrough": "error",
     "no-floating-decimal": "error",
     "no-global-assign": "error",
-    "no-implicit-conversion": "warn",
+    "no-implicit-coercion": "warn",
     "no-implicit-globals": "error",
     "no-implied-eval": "error",
     "no-invalid-this": "warn",
@@ -105,7 +104,7 @@
     "no-self-assign": "warn",
     "no-self-compare": "warn",
     "no-sequences": "error",
-    "no-throw-literals": "warn",
+    "no-throw-literal": "warn",
     "no-unmodified-loop-condition": "warn",
     "no-unused-expressions": "warn",
     "no-unused-labels": "error",
@@ -159,10 +158,15 @@
     ],
     "camelcase": [
       "warn",
-      "always"
+      {
+        "properties": "always"
+      }
     ],
     "capitalized-comments": "off",
-    "comma-dangle": "warn",
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
     "comma-spacing": [
       "warn",
       {
@@ -190,7 +194,10 @@
     "func-names": "off",
     "func-style": [
       "warn",
-      "declaration"
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
     ],
     "function-paren-newline": [
       "warn",
@@ -201,7 +208,10 @@
     "id-match": "off",
     "indent": [
       "warn",
-      2
+      2,
+      {
+        "SwitchCase": 1
+      }
     ],
     "key-spacing": [
       "warn",
@@ -255,7 +265,7 @@
     ],
     "multiline-ternary": [
       "warn",
-      "never"
+      "always-multiline"
     ],
     "new-cap": "warn",
     "new-parens": "warn",
@@ -269,7 +279,7 @@
     "no-mixed-spaces-and-tabs": "error",
     "no-multi-assign": "error",
     "no-multiple-empty-lines": "warn",
-    "no-negated-conditions": "warn",
+    "no-negated-condition": "warn",
     "no-nested-ternary": "warn",
     "no-new-object": "warn",
     "no-plusplus": "off",
@@ -280,7 +290,10 @@
     "no-underscore-dangle": "error",
     "no-unneeded-ternary": "warn",
     "no-whitespace-before-property": "error",
-    "nonblock-statement-body-position": "beside",
+    "nonblock-statement-body-position": [
+      "warn",
+      "below"
+    ],
     "object-curly-newline": [
       "warn",
       {
@@ -295,7 +308,7 @@
     "object-property-newline": [
       "warn",
       {
-        "allowallPropertiesOnSameLine": true
+        "allowAllPropertiesOnSameLine": true
       }
     ],
     "one-var": [
@@ -343,7 +356,7 @@
       "warn",
       "always"
     ],
-    "space-before-sunction-paren": [
+    "space-before-function-paren": [
       "warn",
       {
         "anonymous": "never",

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json.schemastore.org/eslintrc",
   "rules": {
     "callback-return": "off",
     "global-require": "error",

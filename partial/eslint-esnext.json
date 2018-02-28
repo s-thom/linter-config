@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json.schemastore.org/eslintrc",
   "plugins": [
     "import"
   ],
@@ -14,13 +13,6 @@
     "no-return-await": "off",
     "prefer-promise-reject-errors": "warn",
     "require-await": "warn",
-    "func-style": [
-      "warn",
-      "declaration",
-      {
-        "allow-arrow-functions": true
-      }
-    ],
     "implicit-arrow-linebreak": [
       "warn",
       "beside"
@@ -37,7 +29,7 @@
       "warn",
       "as-needed",
       {
-        "requiredForBlockBody": true
+        "requireForBlockBody": true
       }
     ],
     "arrow-spacing": [
@@ -48,7 +40,7 @@
       }
     ],
     "constructor-super": "error",
-    "generator-spacing": [
+    "generator-star-spacing": [
       "warn",
       {
         "before": true,
@@ -74,18 +66,18 @@
     "prefer-rest-params": "error",
     "prefer-spread": "warn",
     "prefer-template": "warn",
-    "require-yeild": "error",
+    "require-yield": "error",
     "rest-spread-spacing": [
       "warn",
       "never"
     ],
     "sort-imports": "off",
-    "symbold-description": "error",
+    "symbol-description": "error",
     "template-curly-spacing": [
       "warn",
       "never"
     ],
-    "yeild-star-spacing": [
+    "yield-star-spacing": [
       "warn",
       {
         "before": true,
@@ -97,10 +89,10 @@
     "import/default": "error",
     "import/namespace": "error",
     "import/no-restricted-paths": "off",
-    "import/no-absolute-paths": "warn",
+    "import/no-absolute-path": "warn",
     "import/no-dynamic-require": "error",
     "import/no-internal-modules": "off",
-    "import/no-webpack-loader-synax": "error",
+    "import/no-webpack-loader-syntax": "error",
     "import/no-self-import": "error",
     "import/export": "error",
     "import/no-named-as-default": "off",

@@ -38,7 +38,6 @@ Alternate versions of the config are available, as follows:
 * `./node_modules/@sthom/linter-config/.eslintrc.react.json`
   * Extends `.eslintrc.jsx.json` to support React
 
-
 ### TSLint (Coming Soon)
 
 The default configuration is for browser with no major libraries. Using it in your own project is easy:

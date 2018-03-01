@@ -10,6 +10,8 @@ npm install --save-dev @sthom/linter-config
 
 Then reference it in your project's linter config (shown below).
 
+As of version `1.1`, the linters themselves are marked as peerDependencies, so will need to be installed separately. Commands for that are provided
+
 ### ESLint
 
 The default configuration is for browser when using a transpiler (like Babel). Using it in your own project is easy:
@@ -24,6 +26,12 @@ The default configuration is for browser when using a transpiler (like Babel). U
 ```
 
 *Note: Due to how ESLint's module resoution handles scoped packages you need to specify the full path.*
+
+The ESLint config uses the following packages:
+
+```sh
+npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+```
 
 Alternate versions of the config are available, as follows:
 
@@ -49,6 +57,12 @@ The default configuration is for browser with no major libraries. Using it in yo
     "@sthom/linter-config"
   ]
 }
+```
+
+The TSLint config uses the following packages:
+
+```sh
+npm install --save-dev tslint tslint-consistent-codestyle tslint-eslint-rules tslint-microsoft-contrib
 ```
 
 Alternate versions of the config are available, as follows:

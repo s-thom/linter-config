@@ -1,6 +1,6 @@
 {
   "name": "@sthom/linter-config",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Linter configs for tslint and eslint",
   "main": "index.js",
   "scripts": {

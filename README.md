@@ -18,25 +18,30 @@ The default configuration is for browser when using a transpiler (like Babel). U
 // .eslintrc.json
 {
   "extends": [
-    "@sthom/linter-config"
+    "./node_modules/@sthom/linter-config/.eslintrc.json"
   ]
 }
 ```
 
+*Note: Due to how ESLint's module resoution handles scoped packages you need to specify the full path.*
+
 Alternate versions of the config are available, as follows:
 
-* `@sthom/linter-config/.eslintrc.node.json`
+* `./node_modules/@sthom/linter-config/.eslintrc.vanilla.json`
+  * Rules for older versions of Javascript
+  * No fancy ES6 features
+* `./node_modules/@sthom/linter-config/.eslintrc.node.json`
   * Adds Node globals
   * Adds Node-specific rules
-* `@sthom/linter-config/.eslintrc.jsx.json`
+* `./node_modules/@sthom/linter-config/.eslintrc.jsx.json`
   * Add rules to deal with JSX syntax
-* `@sthom/linter-config/.eslintrc.react.json`
+* `./node_modules/@sthom/linter-config/.eslintrc.react.json`
   * Extends `.eslintrc.jsx.json` to support React
 
 
 ### TSLint (Coming Soon)
 
-The default configuration is for browser when using a transpiler (like Babel). Using it in your own project is easy:
+The default configuration is for browser with no major libraries. Using it in your own project is easy:
 
 ```js
 // tslint.json
@@ -52,15 +57,15 @@ Alternate versions of the config are available, as follows:
 * `@sthom/linter-config/tslint.jsx.json`
   * Add rules to deal with JSX syntax
 
-## Opinions
+## Contributing
 
-The linter configs contain opinions on how code should look. If you don't agree with these opinions, then here's some options:
+Go ahead. Fork, edit, and submit a pull-request. Or even fork, edit, and release your own.
 
-1. Constantly complain in GitHub Issues
-2. Fork, edit, and submit a pull-request
-3. Override the rules in your own `.eslintrc` or `tslint.json`
+The linter configs are opinionated, but then any styleguide is. If it's not to your liking, then here's some options:
 
-Note: You are more likely to be ignored if you choose #1.
+1. Change the rules you want in your own `.eslintrc.json` or `tslint.json`
+2. Fork this config, edit it, then submit a pull request
+3. Use a different configuration as your base
 
 ## Editability
 

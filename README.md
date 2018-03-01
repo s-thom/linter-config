@@ -70,6 +70,19 @@ Alternate versions of the config are available, as follows:
 * `@sthom/linter-config/tslint.jsx.json`
   * Add rules to deal with JSX syntax
 
+### Markdownlint
+
+The default configuration just deals with plain old Markdown. Using it is easy:
+
+```js
+// .markdownlint.json
+{
+  "extends": "./node_modules/@sthom/linter-config/.markdownlint.json"
+}
+```
+
+Markdownlint doesn't have its own built-in CLI, but you can use [a different package](https://github.com/igorshubovych/markdownlint-cli). Additionally, there is a [plugin for VS Code](https://github.com/DavidAnson/vscode-markdownlint).
+
 ## Contributing
 
 Go ahead. Fork, edit, and submit a pull-request. Or even fork, edit, and release your own.

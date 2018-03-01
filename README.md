@@ -10,6 +10,8 @@ npm install --save-dev @sthom/linter-config
 
 Then reference it in your project's linter config (shown below).
 
+As of version `1.1`, the linters themselves are marked as peerDependencies, so will need to be installed separately. Commands for that are provided
+
 ### ESLint
 
 The default configuration is for browser when using a transpiler (like Babel). Using it in your own project is easy:
@@ -25,6 +27,12 @@ The default configuration is for browser when using a transpiler (like Babel). U
 
 *Note: Due to how ESLint's module resoution handles scoped packages you need to specify the full path.*
 
+The ESLint config uses the following packages:
+
+```sh
+npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+```
+
 Alternate versions of the config are available, as follows:
 
 * `./node_modules/@sthom/linter-config/.eslintrc.vanilla.json`
@@ -37,7 +45,6 @@ Alternate versions of the config are available, as follows:
   * Add rules to deal with JSX syntax
 * `./node_modules/@sthom/linter-config/.eslintrc.react.json`
   * Extends `.eslintrc.jsx.json` to support React
-
 
 ### TSLint (Coming Soon)
 
@@ -52,10 +59,29 @@ The default configuration is for browser with no major libraries. Using it in yo
 }
 ```
 
+The TSLint config uses the following packages:
+
+```sh
+npm install --save-dev tslint tslint-consistent-codestyle tslint-eslint-rules tslint-microsoft-contrib
+```
+
 Alternate versions of the config are available, as follows:
 
 * `@sthom/linter-config/tslint.jsx.json`
   * Add rules to deal with JSX syntax
+
+### Markdownlint
+
+The default configuration just deals with plain old Markdown. Using it is easy:
+
+```js
+// .markdownlint.json
+{
+  "extends": "./node_modules/@sthom/linter-config/.markdownlint.json"
+}
+```
+
+Markdownlint doesn't have its own built-in CLI, but you can use [a different package](https://github.com/igorshubovych/markdownlint-cli). Additionally, there is a [plugin for VS Code](https://github.com/DavidAnson/vscode-markdownlint).
 
 ## Contributing
 

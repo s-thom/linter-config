@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "./partial/tslint-base.json"
+  ]
+}

@@ -1,5 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/tslint",
+  "extends": [
+    "tslint-eslint-rules"
+  ],
   "rules": {
     "adjacent-overload-signatures": {
       "severity": "warning"
@@ -577,6 +580,47 @@
         "check-type",
         "check-type-operator"
       ]
+    },
+    "no-constant-condition": {
+      "severity": "error"
+    },
+    "no-control-regex": {
+      "severity": "warning"
+    },
+    "no-empty-character-class": {
+      "severity": "warning"
+    },
+    "no-ex-assign": {
+      "severity": "error"
+    },
+    "no-extra-boolean-cast": {
+      "severity": "error"
+    },
+    "no-extra-semi": {
+      "severity": "error"
+    },
+    "no-inner-declarations": {
+      "severity": "error"
+    },
+    "no-invalid-regexp": {
+      "severity": "error"
+    },
+    "no-regex-spaces": {
+      "severity": "error"
+    },
+    "no-multi-spaces": {
+      "severity": "warning"
+    },
+    "handle-callback-err": {
+      "severity": "error"
+    },
+    "brace-style": {
+      "severity": "warning",
+      "options": "1tbs"
+    },
+    "object-curly-spacing": {
+      "severity": "warning",
+      "options": "never"
     }
   }
 }

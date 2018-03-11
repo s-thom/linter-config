@@ -1,6 +1,6 @@
 # Stuart's Linter Configs
 
-This package contains linter configs for ESLint (and soon TSLint).
+This package contains linter configs for ESLint (and soon TSLint). Get it on [NPM](https://www.npmjs.com/package/@sthom/linter-config).
 
 ## Usage
 

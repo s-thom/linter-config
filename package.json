@@ -36,6 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "markdownlint": "^0.7.0",
+    "stylelint": "^9.1.1",
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^5.1.0"
   }

@@ -17,6 +17,9 @@ npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint
 # TSLint required packages
 npm install --save-dev tslint tslint-eslint-rules
 
+# Stylelint required packages
+npm install --save-dev stylelint
+
 # Markdownlint CLI
 npm install --save-dev markdownlint-cli
 ```
@@ -64,6 +67,17 @@ The default configuration is for pretty much everything, including JSX support:
 }
 ```
 
+## Stylelint
+
+The default configuration can be used with any file supported by stylelint:
+
+```js
+// .stylelintrc
+{
+  "extends": "./node_modules/@sthom/linter-config/.stylelintrc"
+}
+```
+
 ### Markdownlint
 
 The default configuration just deals with plain old Markdown:
@@ -96,8 +110,14 @@ Some examples of the config in use. Since the majority of rules are specified, t
 ### One True Brace Style
 
 ```js
-if (oneTrueBraceStyle.isBest()) {
+if (oneTrueBraceStyle.isBest {
   oneTrueBraceStyle.use();
+}
+```
+
+```css
+.braces::after {
+  content: '1tbs';
 }
 ```
 
@@ -105,6 +125,12 @@ if (oneTrueBraceStyle.isBest()) {
 
 ```js
 const isUnambiguousStatement = true;
+```
+
+```css
+.semi {
+  visibility: visible;
+}
 ```
 
 ### Indentation: 2 Spaces

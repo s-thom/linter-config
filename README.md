@@ -110,8 +110,14 @@ Some examples of the config in use. Since the majority of rules are specified, t
 ### One True Brace Style
 
 ```js
-if (oneTrueBraceStyle.isBest()) {
+if (oneTrueBraceStyle.isBest {
   oneTrueBraceStyle.use();
+}
+```
+
+```css
+.braces::after {
+  content: '1tbs';
 }
 ```
 
@@ -119,6 +125,12 @@ if (oneTrueBraceStyle.isBest()) {
 
 ```js
 const isUnambiguousStatement = true;
+```
+
+```css
+.semi {
+  visibility: visible;
+}
 ```
 
 ### Indentation: 2 Spaces

@@ -101,15 +101,7 @@
       "severity": "warning"
     },
     "typedef": {
-      "severity": "warning",
-      "options": [
-        "parameter",
-        "property-declaration",
-        "variable-declaration",
-        "member-variable-declaration",
-        "object-destructuring",
-        "array-destructuring"
-      ]
+      "severity": "off"
     },
     "typedef-whitespace": {
       "severity": "warning",

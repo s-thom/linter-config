@@ -4,17 +4,30 @@ This package contains linter configs for ESLint (and soon TSLint).
 
 ## Usage
 
+*As of version `1.1`, the linters themselves are marked as peerDependencies, so will need to be installed separately*
+
 ```sh
 npm install --save-dev @sthom/linter-config
+
+# ESLint required packages
+npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+# Note: "eslint-plugin-import" is not required if using 'vanilla' preset.
+#       "eslint-plugin-jsx-a11y" and "eslint-plugin-react" are not required if using default or 'vanilla' preset.
+
+# TSLint required packages
+npm install --save-dev tslint tslint-eslint-rules
+
+# Markdownlint CLI
+npm install --save-dev markdownlint-cli
 ```
 
-Then reference it in your project's linter config (shown below).
+Then reference the configuration in your project's linter config (shown below).
 
-As of version `1.1`, the linters themselves are marked as peerDependencies, so will need to be installed separately. Commands for that are provided
+*Note: Due to how Node's module resoution handles scoped packages you need to specify the full path.*
 
 ### ESLint
 
-The default configuration is for browser when using a transpiler (like Babel). Using it in your own project is easy:
+The default configuration is for browser when using a transpiler (like Babel):
 
 ```js
 // .eslintrc.json
@@ -23,14 +36,6 @@ The default configuration is for browser when using a transpiler (like Babel). U
     "./node_modules/@sthom/linter-config/.eslintrc.json"
   ]
 }
-```
-
-*Note: Due to how ESLint's module resoution handles scoped packages you need to specify the full path.*
-
-The ESLint config uses the following packages:
-
-```sh
-npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
 ```
 
 Alternate versions of the config are available, as follows:
@@ -46,42 +51,29 @@ Alternate versions of the config are available, as follows:
 * `./node_modules/@sthom/linter-config/.eslintrc.react.json`
   * Extends `.eslintrc.jsx.json` to support React
 
-### TSLint (Coming Soon)
+### TSLint
 
-The default configuration is for browser with no major libraries. Using it in your own project is easy:
+The default configuration is for pretty much everything, including JSX support:
 
 ```js
 // tslint.json
 {
   "extends": [
-    "@sthom/linter-config"
+    "./node_modules/@sthom/linter-config/tslint.json"
   ]
 }
 ```
 
-The TSLint config uses the following packages:
-
-```sh
-npm install --save-dev tslint tslint-consistent-codestyle tslint-eslint-rules tslint-microsoft-contrib
-```
-
-Alternate versions of the config are available, as follows:
-
-* `@sthom/linter-config/tslint.jsx.json`
-  * Add rules to deal with JSX syntax
-
 ### Markdownlint
 
-The default configuration just deals with plain old Markdown. Using it is easy:
+The default configuration just deals with plain old Markdown:
 
 ```js
-// .markdownlint.json
+// .markdownlint.json or .markdownlintrc
 {
   "extends": "./node_modules/@sthom/linter-config/.markdownlint.json"
 }
 ```
-
-Markdownlint doesn't have its own built-in CLI, but you can use [a different package](https://github.com/igorshubovych/markdownlint-cli). Additionally, there is a [plugin for VS Code](https://github.com/DavidAnson/vscode-markdownlint).
 
 ## Contributing
 
@@ -121,8 +113,7 @@ const isUnambiguousStatement = true;
 indentation
   .view()
   .then(formOpinion)
-  .then((opinion) => {
-    return opinion
+  .then(opinion => opinion
       .inflate()
       .exaggerate()
       .blowOutOfProportion()

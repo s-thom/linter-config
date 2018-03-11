@@ -17,6 +17,9 @@ npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint
 # TSLint required packages
 npm install --save-dev tslint tslint-eslint-rules
 
+# Stylelint required packages
+npm install --save-dev stylelint
+
 # Markdownlint CLI
 npm install --save-dev markdownlint-cli
 ```
@@ -61,6 +64,17 @@ The default configuration is for pretty much everything, including JSX support:
   "extends": [
     "./node_modules/@sthom/linter-config/tslint.json"
   ]
+}
+```
+
+## Stylelint
+
+The default configuration can be used with any file supported by stylelint:
+
+```js
+// .stylelintrc
+{
+  "extends": "./node_modules/@sthom/linter-config/.stylelintrc"
 }
 ```
 

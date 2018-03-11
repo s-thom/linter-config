@@ -14,9 +14,15 @@
     "lint",
     "linter",
     "eslint",
+    "eslint-config",
     "tslint",
+    "tslint-config",
+    "markdownlint",
+    "markdownlint-config",
     "config",
-    "rules"
+    "rules",
+    "stylelint",
+    "stylelint-config"
   ],
   "author": "Stuart Thomson <stu.thom.96@gmail.com> (https://sthom.kiwi/)",
   "license": "MIT",

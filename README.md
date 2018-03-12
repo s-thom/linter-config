@@ -1,6 +1,6 @@
 # Stuart's Linter Configs
 
-This package contains linter configs for ESLint (and soon TSLint). Get it on [NPM](https://www.npmjs.com/package/@sthom/linter-config).
+This package contains linter configs for ESLint, TSLint, Stylelint, and Markdownlint. Get it on [NPM](https://www.npmjs.com/package/@sthom/linter-config).
 
 ## Usage
 
@@ -67,7 +67,7 @@ The default configuration is for pretty much everything, including JSX support:
 }
 ```
 
-## Stylelint
+### Stylelint
 
 The default configuration can be used with any file supported by stylelint:
 
@@ -110,7 +110,7 @@ Some examples of the config in use. Since the majority of rules are specified, t
 ### One True Brace Style
 
 ```js
-if (oneTrueBraceStyle.isBest {
+if (oneTrueBraceStyle.isBest) {
   oneTrueBraceStyle.use();
 }
 ```
@@ -139,7 +139,8 @@ const isUnambiguousStatement = true;
 indentation
   .view()
   .then(formOpinion)
-  .then(opinion => opinion
+  .then(opinion =>
+    opinion
       .inflate()
       .exaggerate()
       .blowOutOfProportion()

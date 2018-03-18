@@ -358,7 +358,7 @@
       "severity": "off"
     },
     "prefer-const": {
-      "severity": "error"
+      "severity": "warning"
     },
     "prefer-readonly": {
       "severity": "warning"

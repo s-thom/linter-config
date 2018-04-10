@@ -283,7 +283,17 @@
     "no-nested-ternary": "warn",
     "no-new-object": "warn",
     "no-plusplus": "off",
-    "no-restricted-syntax": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForOfStatement",
+        "message": "Avoid using for-of loops"
+      },
+      {
+        "selector": "WithStatement",
+        "message": "Avoid using with statements"
+      }
+    ],
     "no-tabs": "warn",
     "no-ternary": "off",
     "no-trailing-spaces": "warn",
